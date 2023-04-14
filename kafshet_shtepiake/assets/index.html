@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kafshet</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+    
+        <h1 class="title">Kafshet shtepiake</h1>
+
+        <div class="main-nav">    
+            <ul>
+              <li><a href="index.html">home</a></li>
+              <li><a href="autori.html">Autori</a></li>
+              <li><a href="udhezues.html">Udhëzues</a></li>
+            </ul>
+          </div>
+
+          <div class="gallery">
+
+          <img src="/assets/images/qeni.jfif" onmouseover="playAudio1()" onmouseout="stopAudio1()" onclick="openDogWindow()">
+          <audio id="Audio1">
+          <source src="/assets/sounds/dog.mp3" type="audio/mpeg">
+          </audio>
+
+          <img src="/assets/images/rosaku.jfif" onmouseover="playAudio2()" onmouseout="stopAudio2()" onclick="openDuckWindow()">
+          <audio id="Audio2">
+          <source src="/assets/sounds/duck.mp3" type="audio/mpeg">
+          </audio>
+
+          <img src="/assets/images/macja.jfif" onmouseover="playAudio3()" onmouseout="stopAudio3()" onclick="openCatWindow()">
+          <audio id="Audio3">
+          <source src="/assets/sounds/cat.mp3" type="audio/mpeg">
+          </audio>
+
+          <img src="/assets/images/zogu.jfif" onmouseover="playAudio4()" onmouseout="stopAudio4()" onclick="openBirdWindow()">
+          <audio id="Audio4">
+          <source src="/assets/sounds/bird.mp3" type="audio/mpeg">
+          </audio>
+
+          <img src="/assets/images/lopa.jfif" onmouseover="playAudio5()" onmouseout="stopAudio5()" onclick="openCowWindow()">
+          <audio id="Audio5">
+          <source src="/assets/sounds/cow.mp3" type="audio/mpeg">
+          </audio>
+
+          </div>
+
+          <footer>Cpyright @ Enti parashkollor  "Fëmiu i lumtur" | 2023</footer>
+          
+
+
+           <script>
+            function playAudio1(){
+              document.getElementById("Audio1").play();
+            }
+            function stopAudio1(){
+              document.getElementById("Audio1").pause();
+            }
+          
+            function playAudio2(){
+              document.getElementById("Audio2").play();
+            }
+            function stopAudio2(){
+              document.getElementById("Audio2").pause();
+            }
+
+            function playAudio3(){
+              document.getElementById("Audio3").play();
+            }
+            function stopAudio3(){
+              document.getElementById("Audio3").pause();
+            }
+
+            function playAudio4(){
+              document.getElementById("Audio4").play();
+            }
+            function stopAudio4(){
+              document.getElementById("Audio4").pause();
+            }
+
+            function playAudio5(){
+              document.getElementById("Audio5").play();
+            }
+            function stopAudio5(){
+              document.getElementById("Audio5").pause();
+            }
+
+
+
+
+            function openDogWindow(){
+            window.open("dog.html", "Dog", "width=200,height=200");
+            }
+            function openDuckWindow(){
+            window.open("duck.html", "Duck", "width=200,height=200");
+            }
+            function openCatWindow(){
+            window.open("cat.html", "Cat", "width=200,height=200");
+            }
+            function openBirdWindow(){
+            window.open("bird.html", "Bird", "width=200,height=200");
+            }
+            function openCowWindow(){
+            window.open("cow.html", "Cow", "width=200,height=200");
+            }
+
+          </script>
+
+            <script src="js/script.js"></script>
+    
+</body>
+</html>
